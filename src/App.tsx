@@ -1,12 +1,18 @@
 import React from 'react';
 import './App.css';
-import ExchangeRates from './components/ExchangeRates'
+import Money from './components/Money'
+import Header from './components/Header'
+import Container from '@material-ui/core/Container';
+import BookForm from './components/BookForm'
 
 function App() {
   return (
       <div className="App">
-        <h1>Hello World</h1>
-        
+        <Header />
+        <Container maxWidth="sm">
+        <BookForm />
+        <Money />
+        </Container>
       </div>
   );
 }
